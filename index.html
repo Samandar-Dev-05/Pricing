@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
 
+    <!-- Font-Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -14,7 +19,281 @@
 </head>
 
 <body>
-    
+
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    Pricing example
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Enterprise</a>
+                        <a class="nav-link" href="#">Support</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section class="hero m-auto d-flex flex-column align-items-center gap-1.2rem text-center">
+            <h1 class="text-center mb-19px">Pricing</h1>
+            <p class="text-center" style="width: 50vw;">
+                Quickly build an effective pricing table for your potential customers with this
+                Bootstrap example. It’s built with default Bootstrap components and utilities
+                with little customization.
+            </p>
+        </section>
+
+        <!-- CARDS SECTION -->
+        <section class="cards d-flex justify-content-center  flex-wrap gap-5 mb-5">
+            <div class="card" style="width: 18rem;">
+                <div class="alert alert-light text-center" role="alert">
+                    Free
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title text-center">$0/mo</h2>
+                    <p class="card-text text-center mx-auto mb-28px" style="width: 136px;">
+                        10 users included
+                        2 GB of storage
+                        Email support
+                        Help center access
+                    </p>
+                    <a href="#" class="btn btn-outline-primary d-block">Sign up for free</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="alert alert-light text-center" role="alert">
+                    Pro
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title text-center">$15/mo</h2>
+                    <p class="card-text text-center mx-auto mb-28px" style="width: 152px;">
+                        20 users included
+                        10 GB of storage
+                        Priority email support
+                        Help center access
+                    </p>
+                    <a href="#" class="btn btn-primary d-block">Get started</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="alert alert-light text-center" role="alert" style="background-color: #0D6EFD; color:#fff;">
+                    Enterprise
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title text-center">
+                        $29/mo
+                    </h2>
+                    <p class="card-text text-center mx-auto mb-28px" style="width: 178px;">
+                        30 users included
+                        15 GB of storage
+                        Phone and email support
+                        Help center access
+                    </p>
+                    <a href="#" class="btn btn-primary d-block">Contact us</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TABLES SECTION -->
+        <h2 class="text-center mb-3">
+            Compare plans
+        </h2>
+        <table class="table mb-5">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Free</th>
+                    <th scope="col">Pro</th>
+                    <th scope="col">Enterprise</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <th scope="row">Public</th>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Private</th>
+                    <td>
+
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Permissions</th>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Sharing</th>
+                    <td>
+
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Unlimited members</th>
+                    <td>
+
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Extra security</th>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+
+            <ul class="row list-unstyled">
+                <li class="col-1 col-md-2 col-lg-3">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa-brands fa-bootstrap" style="color: #7a0bea;"></i>
+                    </a>
+                </li>
+                <li class="col-4 col-md-4 col-lg-3 d-flex flex-column gap-1">
+                    <h5>
+                        Features
+                    </h5>
+                    <a href="#">Cool stuff</a>
+                    <a href="#">Random feature</a>
+                    <a href="#">Team feature</a>
+                    <a href="#">Stuff for developers</a>
+                    <a href="#">Another one</a>
+                    <a href="#">Last time</a>
+                </li>
+                <li class="col-4 col-md-3 col-lg-3  d-flex flex-column gap-1">
+                    <h5>
+                        Resources
+                    </h5>
+                    <a href="#">Resource</a>
+                    <a href="#">Resource name</a>
+                    <a href="#">Another resource</a>
+                    <a href="#">Final resource</a>
+                </li>
+                <li class="col-3 col-md-3 col-lg-3  d-flex flex-column gap-1">
+                    <h5>
+                        About
+                    </h5>
+                    <a href="#">Team</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
 
 
 
